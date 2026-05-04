@@ -1,0 +1,83 @@
+.footer {
+  background-color: var(--dark-green);
+  color: white;
+  padding-top: 5rem;
+  margin-top: 4rem;
+}
+
+.footerGrid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+.logo {
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.logo span {
+  color: var(--accent-gold);
+}
+
+.brandInfo p {
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 1.5rem;
+  max-width: 400px;
+}
+
+.donateSection {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+  border-radius: var(--radius-sm);
+  border-left: 4px solid var(--accent-gold);
+}
+
+.donateSection p {
+  margin-bottom: 0.5rem;
+}
+
+.links h4, .contactInfo h4 {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  color: white;
+}
+
+.links ul, .contactInfo ul {
+  list-style: none;
+}
+
+.links li, .contactInfo li {
+  margin-bottom: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.links a:hover, .contactInfo a:hover {
+  color: var(--accent-gold);
+  padding-left: 5px;
+}
+
+.bottomBar {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1.5rem 0;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 992px) {
+  .footerGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .footerGrid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
