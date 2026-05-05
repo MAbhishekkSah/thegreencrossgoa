@@ -45,6 +45,25 @@
   justify-content: center;
 }
 
+.learnMoreBtn {
+  border: 2px solid var(--dark-green);
+  color: white;
+  padding: 0.8rem 2rem;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: inline-block;
+  background-color: var(--dark-green);
+}
+
+.learnMoreBtn:hover {
+  background-color: var(--primary-green);
+  border-color: var(--primary-green);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
 /* Stats Section */
 .statsSection {
   background: linear-gradient(135deg, #1f4734 0%, #153224 100%);

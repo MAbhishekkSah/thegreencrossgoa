@@ -12,15 +12,14 @@ export default function Home() {
           <h1 className={styles.animateFadeUp}>The Green Cross Wildlife of Goa (NGO)</h1>
           <p className={styles.animateFadeUpDelay}>One of Goa's oldest Rescue, Release, Rehabilitation, Conservation, Awareness programs and Training session Centre.</p>
           <div className={`${styles.heroButtons} ${styles.animateFadeUpDelayMore}`}>
-            <a href="tel:09822123042" className="btn btn-primary">Rescue Hotline</a>
-            <Link href="/about" className="btn btn-outline" style={{ borderColor: 'white', color: 'white' }}>Learn More</Link>
+            <Link href="/about" className={`btn ${styles.learnMoreBtn}`}>Learn More</Link>
           </div>
         </div>
       </section>
 
       {/* Impact Stats */}
       <section className={styles.statsSection}>
-        <div className="container grid-4" style={{ position: 'relative', zIndex: 1 }}>
+        <div className="container grid-3" style={{ position: 'relative', zIndex: 1 }}>
           <div className={styles.statCard}>
             <div className={styles.statIcon}>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ width: '100%', height: '100%' }}>
@@ -29,8 +28,8 @@ export default function Home() {
                 <path d="M8 12h8" />
               </svg>
             </div>
-            <div className={styles.statNumber}><AnimatedCounter end={17897} /></div>
-            <div className={styles.statLabel}>Total Animal Rescue</div>
+            <div className={styles.statNumber}><AnimatedCounter end={28627} /></div>
+            <div className={styles.statLabel}>Total animal rescued</div>
           </div>
           <div className={styles.statCard}>
             <div className={styles.statIcon}>
@@ -39,21 +38,10 @@ export default function Home() {
                 <path d="M11.6 16.8a3 3 0 1 1-5.8-1.6" />
               </svg>
             </div>
-            <div className={styles.statNumber}><AnimatedCounter end={14892} /></div>
-            <div className={styles.statLabel}>Awareness Programmes</div>
+            <div className={styles.statNumber}><AnimatedCounter end={18892} /></div>
+            <div className={styles.statLabel}>Awareness sessions</div>
           </div>
-          <div className={styles.statCard}>
-            <div className={styles.statIcon}>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ width: '100%', height: '100%' }}>
-                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
-                <circle cx="9" cy="7" r="4" />
-                <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
-                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-              </svg>
-            </div>
-            <div className={styles.statNumber}><AnimatedCounter end={114} /></div>
-            <div className={styles.statLabel}>Total Membership</div>
-          </div>
+
           <div className={styles.statCard}>
             <div className={styles.statIcon}>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ width: '100%', height: '100%' }}>
